@@ -1,0 +1,122 @@
+/* -------------------------------------------------------- */
+/* About */
+/* -------------------------------------------------------- */
+
+.aboutMe .aboutMe__container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    line-height: 38px;
+    margin: 10px 0px;
+}
+
+.aboutMe .aboutMe__container .aboutMe__infos {
+    width: 300px;
+    margin: 20px 10px;
+}
+
+.aboutMe .aboutMe__container .aboutMe__infos .aboutMe__infos__picture {
+    position: relative;
+    margin-bottom: 40px;
+    width: 315px;
+    height: 352px;
+    transition: all 0.2s;
+}
+.aboutMe .aboutMe__container .aboutMe__infos .aboutMe__infos__picture span {
+    position: absolute;
+    background-color: rgb(150, 202, 255);
+    box-shadow: var(--shadow-blue); 
+    z-index: 100;
+}
+.aboutMe .aboutMe__container .aboutMe__infos .aboutMe__infos__picture img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.aboutMe .aboutMe__container .aboutMe__infos .aboutMe__infos__picture.active {
+    transform: scale(1.3);
+    z-index: 1000;
+}
+
+.aboutMe .aboutMe__container .aboutMe__infos .aboutMe__infos__picture span:nth-child(3), .aboutMe__container .aboutMe__infos .aboutMe__infos__picture span:nth-child(1) {
+    width: 100%;
+    height: 5px;
+}
+.aboutMe .aboutMe__container .aboutMe__infos .aboutMe__infos__picture span:nth-child(2), .aboutMe__container .aboutMe__infos .aboutMe__infos__picture span:nth-child(4) {
+    width: 5px;
+    height: 100%;
+}
+
+.aboutMe .aboutMe__container .aboutMe__infos .aboutMe__infos__picture span:nth-child(1) {
+    top: 0px;
+}
+.aboutMe .aboutMe__container .aboutMe__infos .aboutMe__infos__picture span:nth-child(3) {
+    bottom: 0px;
+}
+
+.aboutMe .aboutMe__container .aboutMe__infos .aboutMe__infos__picture span:nth-child(2) {
+    left: 0px;
+}
+.aboutMe .aboutMe__container .aboutMe__infos .aboutMe__infos__picture span:nth-child(4) {
+    left: 100%;
+}
+
+
+.aboutMe .aboutMe__container .aboutMe__infos .aboutMe__infos__block {
+    margin-bottom: 20px;
+}
+
+.aboutMe .aboutMe__container .aboutMe__infos .aboutMe__infos__block h4 {
+    font-size: 1.4em;
+    text-align: left;
+    text-shadow: var(--shadow-blue);
+    margin-bottom: 10px;
+}
+.aboutMe .aboutMe__container .aboutMe__infos .aboutMe__infos__block span {
+    font-size: 1em;
+    display: block;
+}
+
+.aboutMe .aboutMe__container .aboutMe__infos .aboutMe__infos__block span .aboutMe__infos__icon {
+    margin-right: 20px;
+}
+
+.aboutMe .aboutMe__container .aboutMe__other {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-around;
+}
+.aboutMe .aboutMe__container .aboutMe__other ul {
+    margin: 30px 0px;
+    width: 310px;
+    width: 620px;
+}
+.aboutMe .aboutMe__container .aboutMe__other ul li h4 {
+    font-size: 1.5em;
+    text-shadow: var(--shadow-blue);
+}
+
+.aboutMe .aboutMe__container .aboutMe__text {
+    margin: 20px 30px;
+    width: 50%;
+    text-align: left;
+}
+.aboutMe .aboutMe__container .aboutMe__text h4 {
+    margin-bottom: 20px;
+    border-bottom: solid 1px rgba(255, 255, 255, 0.4);
+}
+
+.aboutMe .aboutMe__container .aboutMe__text__button {
+    margin-top: 30px;
+}
+
+@media screen and (max-width: 600px) {
+    .aboutMe .aboutMe__container .aboutMe__infos, .aboutMe .aboutMe__container .aboutMe__other ul, .aboutMe .aboutMe__container .aboutMe__text {
+        width: 100%;
+    }
+    .aboutMe .aboutMe__container .aboutMe__infos .aboutMe__infos__picture {
+        margin: 0px auto 40px auto;
+    }
+}

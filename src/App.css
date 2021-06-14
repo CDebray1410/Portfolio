@@ -1,0 +1,562 @@
+/* -------------------------------------------------------- */
+/* Root */
+/* -------------------------------------------------------- */
+:root {
+  --primary-color: dodgerblue;
+  --secondary-color: red;
+  --text-color: #FFFFFF;
+  --text-color-hover: #2B2B2B;
+  --background-color: rgb(23, 23, 23);
+  --background-color-hover: #FFFFFF;
+  --background-transparent: #00000080;
+  --shadow-blue: 0px 0px 10px var(--primary-color), 0px 0px 20px var(--primary-color), 0px 0px 40px var(--primary-color), 0px 0px 80px var(--primary-color), 0px 0px 120px var(--primary-color);
+  --shadow-red: 0px 0px 10px var(--secondary-color), 0px 0px 20px var(--secondary-color), 0px 0px 40px var(--secondary-color), 0px 0px 80px var(--secondary-color), 0px 0px 120px var(--secondary-color);
+}
+/* -------------------------------------------------------- */
+/* Général */
+/* -------------------------------------------------------- */
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  color: var(--text-color);
+  border: none;
+  background: none;
+  user-select: none;
+  outline: none;
+  list-style: none;
+  text-decoration: none;
+  text-align: center;
+  font-size: 1.03em;
+  font-family: 'serif';
+  word-wrap: break-word;
+}
+body {
+  background: var(--background-color);
+  overflow-x: hidden;
+}
+main {
+  width: 80%;
+  margin: auto;
+}
+@media screen and (max-width: 600px) {
+  main {
+    width: 95%;
+  }
+}
+a {
+  cursor: pointer;
+}
+
+button {
+  cursor: pointer;
+}
+
+h4 {
+  font-family: 'Cinzel', serif;
+}
+
+.Limelight{
+  font-family: 'Limelight', cursive;
+}
+.Anton {
+  font-family: 'Anton', sans-serif;
+}
+.Cinzel {
+  font-family: 'Cinzel', serif;
+}
+.Orbitron {
+  font-family: 'Orbitron', sans-serif;
+}
+.Allerta {
+  font-family: 'Allerta Stencil', sans-serif;
+}
+.sans-serif {
+  font-family: sans-serif;
+}
+
+.revealsSlide {
+  opacity: 0;
+  transition: all 0.5s;
+}
+.revealsSlide:nth-child(odd) {
+  transform: translateX(-220px);
+}
+.revealsSlide:nth-child(odd).active {
+  opacity: 1;
+  transform: translateX(0);
+}
+.revealsSlide:nth-child(odd) span {
+  transform: translateX(3000px);
+}
+.revealsSlide:nth-child(odd).active span {
+  transform: translateX(0);
+}
+
+.revealsTop {
+  opacity: 0;
+  transition: all 0.5s;
+}
+.revealsTop {
+  transform: translateY(220px);
+}
+.revealsTop.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* -------------------------------------------------------- */
+/* Header */
+/* -------------------------------------------------------- */
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  position: relative;
+  padding: 20px 0px;
+}
+header div {
+  min-height: 300px;
+  min-width: 300px;
+}
+header h1 {
+  font-size: 3em;
+  font-weight: bold;
+  letter-spacing: 0.3em;
+  line-height: 80px;
+  text-shadow: var(--shadow-blue);
+  margin: 30px 0px;
+  text-align: center;
+  width: 100%;
+  min-height: 85px;
+}
+
+header .line {
+  position: relative;
+  margin: 0 auto 300px auto;
+  border-right: 2px solid red;
+  color:rgb(150, 202, 255);
+  font-size: 180%;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  transform: translateY(-50%);
+}
+
+header .anim-typewriter {
+  animation: typewriter 1s steps(40) 1.5s 1 normal both,
+            blinkTextCursor 800ms steps(70) infinite normal;
+} 
+
+@keyframes typewriter {
+  from {
+    width: 0;
+  }
+  to {
+    width: 9em;
+  }
+}
+
+@keyframes blinkTextCursor {
+  from {
+    border-right-color: white;
+  }
+  to {
+    border-right-color: transparent;
+  }
+  
+}
+
+@keyframes textLighten {
+  from {
+    color:rgba(255, 255, 255, 0.5);
+    text-shadow: none;
+  } to {
+    color: var(--text-color);
+    text-shadow: var(--shadow-blue);
+  }
+}
+
+.black {
+  background-color: black;
+}
+
+@keyframes blink {
+  0% {
+      opacity: 1;
+  }
+  50% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+  }
+}
+
+.text-center {
+  text-align: center;
+}
+
+svg text {
+  stroke: white;
+  font-size: 100px;
+  font-weight: bold;
+  stroke-width: 3;
+  animation: textAnimate 3s infinite alternate;
+}
+
+@keyframes textAnimate {
+  0% {
+      stroke-dasharray: 0 50%;
+  }
+  100% {
+      stroke-dasharray: 50% 0;
+  }
+}
+
+/* -------------------------------------------------------- */
+/* Menu / Néons */
+/* -------------------------------------------------------- */
+.neon{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.neon__presentation{
+  margin-bottom: 80px;
+}
+.neon--left , .neon--right{
+  width: 100%;
+  height: 183px;
+}
+.neon--top{
+  width: 100%;
+  height: 900px;
+  display: flex;
+  flex-wrap: wrap;
+  line-height: 100px;
+}
+.neon h2 {
+  width: 100%;
+}
+.neon__title{
+  width: 100%;
+  font-size: 2.1em;
+  font-weight: bold;
+  letter-spacing: 0.2em;
+  text-shadow: var(--shadow-blue);
+  text-transform: uppercase;
+  padding: 10px 0px;
+  transition: all 0.2s;
+}
+.neon__title--red {
+  text-shadow: var(--shadow-red);
+}
+.neon__title.nav:hover {
+  transform: scale(1.1);
+}
+
+
+.neon__text{
+  font-size: 2em;
+  font-weight: bold;
+  line-height: 1.4em;
+  padding: 5px;
+  text-shadow: var(--shadow-red);
+}
+.neon .neon__bar{
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 11;
+  border-radius: 10px;
+  background: rgb(150, 202, 255);
+  box-shadow: var(--shadow-blue);
+}
+.neon .neon__bar--left , .neon .neon__bar--right {
+  width: 5px;
+  height: 100%;
+  transform: scaleY(0);
+}
+.neon__bar--left, .neon__bar--right {
+  animation-timing-function: linear;
+  animation-duration: 2s;
+  animation-direction: reverse;
+}
+.neon__bar--left.animation {
+  animation-name: slide-right;
+}
+.neon__bar--right.animation {
+  animation-name: slide-left;
+}
+.neon__bar--right.animation {
+  animation-timing-function: linear;
+  animation-duration: 3s;
+  animation-direction: normal;
+}
+
+.neon .neon__bar--top{
+  width: 100%;
+  height: 5px;
+  transform: scaleX(0);
+}
+.neon__bar--top.animation {
+  animation-name: slide-bottom;
+  animation-timing-function: linear;
+  animation-duration: 3s;
+  animation-direction: reverse;
+  animation-delay: 2.5s;
+}
+
+.neon .neon__layer{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  background: black;
+}
+.neon .neon__layer--left{
+  transform: scaleX(0);
+  transform-origin: left;
+}
+.neon .neon__layer--right{
+  transform: scaleX(1);
+  transform-origin: right;
+}
+.neon__layer--left, .neon__layer--right {
+  animation-timing-function: linear;
+  animation-duration: 2s;
+  /* animation-iteration-count: infinite; */
+  animation-direction: reverse;
+}
+.neon__layer--left.animation {
+  animation-name: layer-right;
+}
+.neon__layer--right.animation {
+  animation-name: layer-left;
+}
+
+.neon .neon__layer--top{
+  transform: scaleY(0);
+  transform-origin: bottom;
+}
+.neon__layer--top.animation {
+  animation-name: layer-bottom;
+  animation-timing-function: linear;
+  animation-duration: 3.1s;
+  animation-direction: reverse;
+  animation-delay: 1s;
+}
+
+.neonButton{
+  position: relative;
+  font-size: 1.2em;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: rgb(255, 150, 150);
+  transition: 0.5s all;
+  text-shadow: var(--shadow-red);
+  cursor: pointer;
+}
+.neonButton--blue {
+  color: rgb(167, 197, 253);
+  text-shadow: var(--shadow-blue);
+}
+.neonButton:hover span:nth-child(1), .neonButton:hover span:nth-child(3) {
+  transform: scaleY(1);
+}
+.neonButton:hover span:nth-child(2), .neonButton:hover span:nth-child(4) {
+  transform: scaleX(1);
+}
+.neonButton span {
+  position: absolute;
+  display: block;
+  background-color: rgb(255, 150, 150);
+  box-shadow: var(--shadow-red);
+  transition: 0.4s transform;
+}
+.neonButton.neonButton--blue span {
+  background-color:rgb(167, 197, 253);
+  box-shadow: var(--shadow-blue);
+}
+
+.neonButton span:nth-child(1) {
+  left: 0;
+  bottom: 0;
+  width: 1px;
+  height: 100%;
+  transform: scaleY(0);
+  transform-origin: bottom;
+}
+.neonButton span:nth-child(2) {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 1px;
+  transform: scaleX(0);
+  transform-origin: right;
+}
+.neonButton span:nth-child(3) {
+  right: 0;
+  top: 0;
+  width: 1px;
+  height: 100%;
+  transform: scaleY(0);
+  transform-origin: top;
+}
+.neonButton span:nth-child(4) {
+  right: 0;
+  top: 0;
+  width: 100%;
+  height: 1px;
+  transform: scaleX(0);
+  transform-origin: left;
+}
+
+@keyframes slide-right {
+  0%, 4%
+  {
+      transform: scaleY(0);
+  }
+  10% 
+  {
+      transform: scaleY(1) translateY(0);
+  }
+  94%
+  {
+      transform: scaleY(1) translateX(340px);
+  }
+  100%
+  {
+      transform: scaleY(0) translateX(340px);
+  }
+}
+@keyframes layer-right {
+  0%, 4%
+  {
+      transform: scaleX(0);
+  }
+  10% 
+  {
+      transform: scaleX(0);
+  }
+  94%
+  {
+      transform: scaleX(1);
+  }
+  100%
+  {
+      transform: scaleX(1);
+  }
+}
+@keyframes slide-left {
+  0%, 4%
+  {
+      transform: scaleY(0);
+  }
+  10% 
+  {
+      transform: scaleY(1) translateY(0);
+  }
+  94%
+  {
+      transform: scaleY(1) translateX(700px);
+  }
+  100%
+  {
+      transform: scaleY(0) translateX(700px);
+  }
+}
+@keyframes layer-left {
+  0%, 4%
+  {
+      transform: scaleX(0);
+  }
+  10% 
+  {
+      transform: scaleX(0);
+  }
+  94%
+  {
+      transform: scaleX(1);
+  }
+  100%
+  {
+      transform: scaleX(1);
+  }
+}
+
+
+@keyframes slide-bottom {
+  0%, 4%
+  {
+      transform: scaleX(0) translateY(900px);
+  }
+  10% 
+  {
+      transform: scaleX(1) translateY(880px);
+  }
+  94%
+  {
+      transform: scaleX(1) translateY(0);
+  }
+  100%
+  {
+      transform: scaleX(0) translateY(0);
+  }
+}
+@keyframes layer-bottom {
+  0%, 4%
+  {
+      transform: scaleY(0);
+  }
+  10% 
+  {
+      transform: scaleY(0);
+  }
+  94%
+  {
+      transform: scaleY(1);
+  }
+  100%
+  {
+      transform: scaleY(1);
+  }
+}
+
+.delay--005 {
+  animation-delay: 0.05s;
+}
+.delay--03 {
+  animation-delay: 0.3s;
+}
+.delay--035 {
+  animation-delay: 0.35s;
+}
+.delay--06 {
+  animation-delay: 0.6s;
+}
+.delay--065 {
+  animation-delay: 0.65s;
+}
+
+.aboutMe, .projects {
+  transform: translateX(1000);
+  min-height: 300px;
+  min-width: 50px;
+}
+
+/* -------------------------------------------------------- */
+/* Footer */
+/* -------------------------------------------------------- */
+
+footer {
+  margin: 30px 0px;
+}

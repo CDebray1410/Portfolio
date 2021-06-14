@@ -1,0 +1,84 @@
+/* -------------------------------------------------------- */
+/* Skills */
+/* -------------------------------------------------------- */
+#skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 300px;
+    padding: 20px;
+}
+.skills{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 20px 0px;
+}
+.skill{
+    position: relative;
+    width: 100%;
+    margin: 20px 0px;
+    padding: 10px;
+    box-shadow: 10px 20px 40px rgba(0, 0, 0, 0.2);
+    transition: 0.8s;
+    line-height: 60px;
+}
+.skill span {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    border-radius: 10;
+    transition: 0.8s;
+    z-index: 11;
+    background: rgb(150, 202, 255);
+    box-shadow: var(--shadow-blue);
+}
+.skills--soft .skill span {
+    background: rgb(255, 150, 150);
+    box-shadow: var(--shadow-red);
+}
+.skillLeft, .skillRight {
+    width: 50%;
+}
+@media screen and (max-width: 900px) {
+    .skill{
+        line-height: 50px;
+    }
+    .skillLeft, .skillRight {
+        width: 100%;
+    } 
+}
+
+.revealsSlide {
+    opacity: 0;
+    transition: all 0.5s;
+}
+.revealsSlide.skillLeft {
+    transform: translateX(-220px);
+}
+.revealsSlide.skillLeft.active {
+    opacity: 1;
+    transform: translateX(0);
+}
+.revealsSlide.skillLeft span {
+    transform: translateX(3000px);
+}
+.revealsSlide.skillLeft.active span {
+    transform: translateX(0);
+}
+
+.revealsSlide.skillRight {
+    transform: translateX(220px);
+}
+.revealsSlide.skillRight.active {
+    opacity: 1;
+    transform: translateX(0);
+}
+.revealsSlide.skillRight span {
+    transform: translateX(-3000px);
+}
+.revealsSlide.skillRight.active span {
+    transform: translateX(0);
+}

@@ -1,0 +1,76 @@
+/* -------------------------------------------------------- */
+/* Experiences */
+/* -------------------------------------------------------- */
+
+.experiences .experiences__container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    line-height: 38px;
+    margin: 10px 0px;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.experiences .experiences__container:last-child {
+    border-bottom: none;
+}
+
+.experiences .experiences__container .experiences__infos {
+    width: 45%;
+    margin: 20px 10px;
+    opacity: 0;
+}
+
+.experiences .experiences__container .experiences__infos.active {
+    opacity: 1;
+    transition: 0.3s;
+}
+
+.experiences .experiences__container .experiences__infos .experiences__infos__block h4 {
+    font-size: 1.4em;
+    text-align: center;
+    text-shadow: var(--shadow-blue);
+    margin-bottom: 10px;
+    display: block;
+}
+.experiences .experiences__container .experiences__infos .experiences__infos__block span {
+    font-size: 1em;
+}
+
+.experiences .experiences__container .experiences__infos .experiences__infos__block {
+    margin-bottom: 20px;
+}
+
+.experiences .experiences__container .experiences__other ul {
+    margin: 30px 0px;
+}
+.experiences .experiences__container .experiences__other ul li strong {
+    font-size: 1.5em;
+    text-shadow: var(--shadow-blue);
+}
+
+.experiences .experiences__container .experiences__text {
+    margin: 20px 10px;
+    width: 50%;
+    text-align: left;
+    opacity: 0;
+    transition: 0.3s;
+}
+.experiences .experiences__container .experiences__text.active {
+    opacity: 1;
+}
+
+.experiences .experiences__container .experiences__text__title {
+    font-size: 1.4em;
+    text-shadow: var(--shadow-blue);
+}
+
+@media screen and (max-width: 600px) {
+    .experiences .experiences__container .experiences__infos {
+        width: 100%;
+    }
+    .experiences .experiences__container .experiences__text {
+        width: 100%;
+    }
+}

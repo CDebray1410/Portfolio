@@ -1,0 +1,68 @@
+/* -------------------------------------------------------- */
+/* Formation */
+/* -------------------------------------------------------- */
+
+.formation .formation__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    line-height: 38px;
+    margin: 10px 0px;
+}
+.formation .formation__container:hover {
+    transform:scale(1.1);
+}
+
+.formation .formation__container div:nth-child(2) {
+    width: 350px;
+}
+.formation .formation__container div:nth-child(3) {
+    width: 350px;
+}
+
+.formation .formation__container .formation__infos {
+    width: 100%;
+    margin: 20px 10px;
+}
+
+.bigIcons {
+    display: flex;
+    font-size: 5em;
+    text-shadow: var(--shadow-blue);
+    margin-right: 20px;
+}
+
+.formation .formation__container .formation__infos .formation__infos__block span {
+    font-size: 1.4em;
+    text-align: left;
+    text-shadow: var(--shadow-blue);
+    margin-bottom: 10px;
+    display: block;
+}
+.formation .formation__container .formation__infos .formation__infos__block span:nth-child(2) {
+    font-size: 1em;
+}
+
+.formation .formation__container .formation__infos .formation__infos__block {
+    margin-bottom: 20px;
+}
+
+.formation .formation__container .formation__other ul {
+    margin: 30px 0px;
+}
+.formation .formation__container .formation__other ul li strong {
+    font-size: 1.5em;
+    text-shadow: var(--shadow-blue);
+}
+
+.formation .formation__container .formation__text {
+    margin: 20px 10px;
+    width: 100%;
+    text-align: center;
+}
+
+.formation .formation__container .formation__text__title {
+    font-size: 1.4em;
+    text-shadow: var(--shadow-blue);
+}

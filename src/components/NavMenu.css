@@ -1,0 +1,93 @@
+/* -------------------------------------------------------- */
+/* Topnav */
+/* -------------------------------------------------------- */
+
+@media screen and (max-width: 900) {
+    .topnav {
+        height: auto;
+        text-align: center;
+        display: -webkit-box;
+        display: -ms-flexbox;
+            display: flex;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        width: 100%;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        background-color: var(--background-color);
+    }
+    .topnav div {
+        border-bottom: 1px rgba(255, 255, 255, 0.2) solid;
+        padding: 15px 0px;
+    }
+}
+
+.topnav {
+    position: fixed;
+    top: 0;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    z-index: 1000;
+    background-color: var(--background-color);
+    z-index: 2000;
+}
+
+.topnav div {
+    margin-bottom: 10px;
+}
+
+.topnav span {
+    position: absolute;
+    background: rgb(255, 150, 150);
+    box-shadow: var(--shadow-red);
+    height: 100%;
+    width: 5px;
+    top: 0;
+    left: 100%;
+}
+
+a .title {
+    font-family: 'Anton', sans-serif;
+    letter-spacing: 3px;
+}
+
+#secondBar {
+    height: 5px;
+    width: 100%;
+    top: 98.5%;
+    left: 0;
+}
+
+.topnav--blue {
+    background-color: rgba(34, 95, 145, 0.6);
+}
+
+.topnav div {
+    width: 100%;
+    padding: 10px 15px;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    font-size: 0.9em;
+}
+.topnav div a {
+    text-align: center;
+    margin: auto;
+}
+
+@media screen and (max-width: 1600) {
+    .topnav div {
+        display: block;
+        width: 100%;
+    }
+    #firstBar {
+        display: none;
+    }
+}
+.topnav div:hover {
+    background-color: rgba(34, 95, 145, 0.6);
+}

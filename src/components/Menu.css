@@ -1,0 +1,110 @@
+/* -------------------------------------------------------- */
+/* Navigation */
+/* -------------------------------------------------------- */
+
+.navigation {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 50px;
+    height: 50px;
+    background-color: var(--background-color);
+    transition: width 0.3s, height 0.4s;
+    transition-delay: 0s, 0.4s; 
+    z-index: 100;
+    overflow: hidden;
+}
+.navigation.active {
+    width: 220px;
+    height: 400px;
+}
+
+.navigation .toggle {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--background-color);
+    transition: 0.4s;
+    cursor: pointer;
+}
+.navigation .toggle.active {
+    background-color: white;
+}
+.navigation .toggle.active::before {
+    transform: rotate(315deg);
+    color: black;
+}
+.navigation .toggle::before {
+    content: "+";
+    font-size: 2.4em;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    width: 50px;
+    height: 50px;
+    transition: 0.5s;
+}
+.navigation ul {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+.navigation ul li {
+    list-style: none;
+    position: relative;
+    width: 100%;
+    background-color: black;
+}
+.navigation ul li a {
+    position: relative;
+    display: block;
+    width: 100%;
+    display: flex;
+    text-decoration: none;
+    color: white;
+}
+
+@media screen and (max-width: 600px) {
+    .navigation.active {
+        width: 100%;
+    }
+    .navigation ul li a {
+        font-size: 0.8em;
+    }
+}
+
+
+.navigation ul li a:hover {
+    background-color: white;
+}
+.navigation ul li a .icon {
+    position: relative;
+    display: block;
+    min-width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+}
+.navigation ul li a .icon .fa {
+    font-size: 24px;
+}
+.navigation ul li a .title {
+    position: relative;
+    display: block;
+    line-height: 50px;
+    text-align: start;
+    white-space: nowrap;
+}
+.navigation ul li:hover a .icon .fa,
+.navigation ul li:hover a .title {
+    color: black;
+}
