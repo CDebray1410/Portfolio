@@ -1,0 +1,41 @@
+{
+  "files": {
+    "main.css": "/Portfolio/static/css/main.3a359ffe.chunk.css",
+    "main.js": "/Portfolio/static/js/main.db9a4b6e.chunk.js",
+    "main.js.map": "/Portfolio/static/js/main.db9a4b6e.chunk.js.map",
+    "runtime-main.js": "/Portfolio/static/js/runtime-main.b94712ae.js",
+    "runtime-main.js.map": "/Portfolio/static/js/runtime-main.b94712ae.js.map",
+    "static/js/2.92eba81a.chunk.js": "/Portfolio/static/js/2.92eba81a.chunk.js",
+    "static/js/2.92eba81a.chunk.js.map": "/Portfolio/static/js/2.92eba81a.chunk.js.map",
+    "static/js/3.dc58be09.chunk.js": "/Portfolio/static/js/3.dc58be09.chunk.js",
+    "static/js/3.dc58be09.chunk.js.map": "/Portfolio/static/js/3.dc58be09.chunk.js.map",
+    "index.html": "/Portfolio/index.html",
+    "static/css/main.3a359ffe.chunk.css.map": "/Portfolio/static/css/main.3a359ffe.chunk.css.map",
+    "static/js/2.92eba81a.chunk.js.LICENSE.txt": "/Portfolio/static/js/2.92eba81a.chunk.js.LICENSE.txt",
+    "static/media/Christopher_Debray_développeur_web.39997736.pdf": "/Portfolio/static/media/Christopher_Debray_développeur_web.39997736.pdf",
+    "static/media/FreeAdds.e7ebd3f5.png": "/Portfolio/static/media/FreeAdds.e7ebd3f5.png",
+    "static/media/FreeAdds2.d897237d.png": "/Portfolio/static/media/FreeAdds2.d897237d.png",
+    "static/media/FreeAdds3.75bd357d.png": "/Portfolio/static/media/FreeAdds3.75bd357d.png",
+    "static/media/MyQuizz.19b11e98.png": "/Portfolio/static/media/MyQuizz.19b11e98.png",
+    "static/media/MyQuizz2.d8a1e113.png": "/Portfolio/static/media/MyQuizz2.d8a1e113.png",
+    "static/media/MyQuizz3.58ef2fe0.png": "/Portfolio/static/media/MyQuizz3.58ef2fe0.png",
+    "static/media/MyQuizz4.c77afa6e.png": "/Portfolio/static/media/MyQuizz4.c77afa6e.png",
+    "static/media/ProfilePicture.3b5d91f9.png": "/Portfolio/static/media/ProfilePicture.3b5d91f9.png",
+    "static/media/Spotify.a9e6ff3f.png": "/Portfolio/static/media/Spotify.a9e6ff3f.png",
+    "static/media/Spotify2.6c6b2d95.png": "/Portfolio/static/media/Spotify2.6c6b2d95.png",
+    "static/media/Spotify3.30a44677.png": "/Portfolio/static/media/Spotify3.30a44677.png",
+    "static/media/Spotify4.53e3d5c0.png": "/Portfolio/static/media/Spotify4.53e3d5c0.png",
+    "static/media/TWEET.d75cfb0d.png": "/Portfolio/static/media/TWEET.d75cfb0d.png",
+    "static/media/TWEET2.4b4cfe2a.png": "/Portfolio/static/media/TWEET2.4b4cfe2a.png",
+    "static/media/TWEET3.2349b25c.png": "/Portfolio/static/media/TWEET3.2349b25c.png",
+    "static/media/TWEET4.b4558686.png": "/Portfolio/static/media/TWEET4.b4558686.png",
+    "static/media/TWEET5.929fc9b1.png": "/Portfolio/static/media/TWEET5.929fc9b1.png",
+    "static/media/logo.6ce24c58.svg": "/Portfolio/static/media/logo.6ce24c58.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.b94712ae.js",
+    "static/js/2.92eba81a.chunk.js",
+    "static/css/main.3a359ffe.chunk.css",
+    "static/js/main.db9a4b6e.chunk.js"
+  ]
+}
